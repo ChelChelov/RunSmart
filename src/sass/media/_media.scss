@@ -1,0 +1,53 @@
+@media(max-width: 991px) {
+    .promo {
+        padding: 21px 15px 93px 15px;
+    }
+    .benefits {
+        &__block {
+            padding: 0 10px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .header {
+        &__logo {
+            width: 200px;
+        }
+        &__official {
+            span {
+                font-size: 17px;
+            }
+        }
+        &__phone {
+            font-size: 16px;
+        }
+    }
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+        &__header {
+            font-size: 36px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+    }
+    .benefits {
+        &__wrapper {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__block {
+            padding-top: 20px;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+
+}
