@@ -15,8 +15,9 @@
             width: 200px;
         }
         &__official {
+            font-size: 11px;
             span {
-                font-size: 17px;
+                font-size: 16px;
             }
         }
         &__phone {
@@ -49,5 +50,50 @@
 }
 
 @media(max-width: 575px) {
-
+    .header {
+        &__logo {
+            max-width: 250px;
+            margin-right: 15px;
+        }
+        &__official {
+            display: none;
+        }
+        &__contacts {
+            width: 50%;
+        }
+        &__phone {
+            font-size: 13px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 24px;
+        }
+        &__subheader {
+            font-size: 17px;
+            text-align: center;
+        }
+        &__icons {
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .button {
+        width: 120px;
+        height: 30px;
+        font-size: 11px;
+        &_main {
+            width: 210px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+    .benefits {
+        &__header {
+            font-size: 24px;
+        }
+    }
 }
