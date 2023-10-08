@@ -27,4 +27,21 @@
             margin: 0 auto;
         }
     }
+    .tns-nav {
+        position: absolute;
+        left: 50%;
+        bottom: -40px;
+        transform: translateX(-50%);
+        button {
+            width: 13px;
+            height: 13px;
+            margin: 5px;
+            border-radius: 100%;
+            border: none;
+            outline: none;
+        }
+        button.tns-nav-active {
+                background: $red-color;
+        }
+    }
 }
