@@ -1,5 +1,11 @@
 .catalog {
     padding-bottom: 79px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
     &__tabs {
         display: flex;
         flex-direction: row;
@@ -7,7 +13,7 @@
         align-items: center;
         margin-top: 46px;
         list-style-type: none;
-        margin-bottom: 0;
+        margin-bottom: 28px;
         padding-left: 0;
     }
     &__tab {
@@ -42,7 +48,7 @@
         }
     }
     &__content {
-        margin-top: 57px;
+        margin-top: 28px;
     }
     &-item {
         width: 303px;
