@@ -43,6 +43,10 @@
     }
     &__content {
         margin-top: 28px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     &-item {
         width: 303px;
@@ -50,6 +54,7 @@
         border: 2px solid #D0D0D0;
         padding: 20px;
         overflow: hidden;
+        margin-bottom: 18px;
         &__wrapper {
             display: flex;
             width: calc(200% + 40px);
@@ -120,8 +125,6 @@
         }
         &__link {
             display: block;
-            margin: 0 auto;
-            width: 118px;
             margin-top: 14px;
             color: $red-color;
             text-align: center;
@@ -129,6 +132,7 @@
             font-weight: 500;
             line-height: 14px; 
             text-decoration-line: underline;
+            text-transform: uppercase;
             transition: 0.5s all;
             &:hover {
                 opacity: 0.9;
@@ -158,5 +162,22 @@
             font-weight: 700;
             line-height: 20px; 
         }
+        &__back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 15px));
+            display: block;
+            color: $red-color;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px; 
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            transition: 0.5s all;
+            &:hover {
+                opacity: 0.9;
+            }
+        }   
     }
 }
