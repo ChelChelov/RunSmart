@@ -40,9 +40,18 @@
             display: none;
         }
     }
+    .catalog {
+        &__tab {
+            width: 200px;
+            font-size: 17px;
+        }
+    }
 }
 
 @media(max-width: 767px) {
+    .title {
+        font-size: 28px;
+    }
     .header {
         &__logo {
             width: 200px;
@@ -90,9 +99,36 @@
             font-size: 17px;
         }
     }
+    .catalog {
+        &__tabs {
+            margin-top: 30px;
+        }
+        &__tab {
+            width: 150px;
+            height: 42px;
+            font-size: 14px;
+            line-height: 8px;
+            border: 1px solid #d0d0d0;
+        }
+    }
 }
 
 @media(max-width: 575px) {
+    .title {
+        font-size: 23px;
+    }
+    .button {
+        &_call {
+            width: 120px;
+            height: 30px;
+            font-size: 11px;
+        }
+        &_main {
+            width: 210px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
     .header {
         &__logo {
             max-width: 250px;
@@ -122,21 +158,6 @@
         }
         &__link {
             font-size: 14px;
-        }
-    }
-    .button {
-        width: 120px;
-        height: 30px;
-        font-size: 11px;
-        &_main {
-            width: 210px;
-            height: 40px;
-            font-size: 14px;
-        }
-    }
-    .benefits {
-        .title {
-            font-size: 24px;
         }
     }
     .consultation {
@@ -173,6 +194,21 @@
                 height: 10px;
                 margin: 3px;
             }
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+        }
+        &__tab {
+            width: 137px;
+            height: 40px;
+            font-size: 13px;
+            line-height: 6px;
+            margin-bottom: 10px;
+        }
+        &__item {
+            width: 295px;
         }
     }
 }
