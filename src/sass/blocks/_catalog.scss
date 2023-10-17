@@ -15,7 +15,7 @@
         height: 52px;
         border: 2px solid #D0D0D0;
         margin: 0 5px;
-        transform: skewX(-25deg);
+        transform: skewX(-25deg); //rectangle became a parallelogram (having included text)
         color: #6B6B6B;
         text-align: center;
         font-size: 18px;
@@ -30,7 +30,7 @@
             border: none;
         }
         div {
-            transform: skewX(25deg);
+            transform: skewX(25deg); //text turned back in normal status
         }
         &_active {
             color: #FFF;
@@ -56,38 +56,39 @@
         min-height: 442px;
         border: 2px solid #D0D0D0;
         padding: 20px;
-        overflow: hidden;
+        overflow: hidden; //Catalog-item has two elments (content and list). This property hides one of the elements 
         margin-bottom: 18px;
         &__wrapper {
             display: flex;
-            width: calc(200% + 40px);
+            width: calc(200% + 40px); //Width of catalog-item must be 2x width (content + list + paddings)
         }
+        //content must be equal to list by width and height
         &__content {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 50%;
+            width: 50%; //50% of item
             margin-right: 0px;
-            transform: translateX(-100%);
+            transform: translateX(-100%); // goes left by X and bacomes invisible
             transition: 0.5s all;
             &_active {
-                transform: translateX(0%);
+                transform: translateX(0%); // goes right by X and becomes visible
                 margin-right: 20px;
             }
         }
         &__list {
             position: relative;
-            width: 50%;
+            width: 50%; //50% of item
             margin-left: 20px;
-            transform: translateX(0%);
+            transform: translateX(0%); // opposite to content
             padding-right: 20px;
             transition: 0.5s all;
             padding-left: 15px;
             margin-bottom: 0;
             list-style-type: none;
             &_active {
-                transform: translateX(-100%);
+                transform: translateX(-100%); // opposite to content
                 margin-left: 0px;
             }
             li {
@@ -173,7 +174,7 @@
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translateX(calc(-50% - 15px));
+            transform: translateX(calc(-50% - 15px)); // it helps to stand "back" at the center position; "-15px" is a width of "&::before" content of catalog-item__list_active 
             display: block;
             color: $red-color;
             font-size: 14px;
