@@ -111,6 +111,26 @@
             border: 1px solid #d0d0d0;
         }
     }
+    .feedback {
+        &-item {
+            padding-top: 45px;
+            &__img {
+                max-width: 150px;
+            }
+            &__article {
+                margin-left: 40px;
+            }
+            &__name {
+                font-size: 17px;
+            }
+            &__achievement {
+                font-size: 13px;
+            }
+            &__descr {
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 @media(max-width: 575px) {
@@ -209,6 +229,30 @@
         }
         &__item {
             width: 295px;
+        }
+    }
+    .feedback {
+        &-item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+            &__img {
+                max-width: 140px;
+            }
+            &__article {
+                margin-top: 30px;
+                margin-left: 15px;
+            }
+            &__name {
+                font-size: 16px;
+            }
+            &__achievement {
+                font-size: 11px;
+            }
+            &__descr {
+                font-size: 14px;
+            }
         }
     }
 }
