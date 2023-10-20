@@ -39,7 +39,10 @@
         a {
             color: #F00;
             font-family: MuseoModerno;
-            text-decoration-line: underline;
+            text-decoration-line: none;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

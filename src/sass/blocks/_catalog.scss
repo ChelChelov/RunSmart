@@ -139,11 +139,11 @@
             font-size: 14px;
             font-weight: 500;
             line-height: 14px; 
-            text-decoration-line: underline;
+            text-decoration: none;
             text-transform: uppercase;
             transition: 0.5s all;
             &:hover {
-                opacity: 0.9;
+                text-decoration: underline;
             }
         }
         hr {
@@ -180,11 +180,11 @@
             font-size: 14px;
             font-weight: 500;
             line-height: 14px; 
-            text-decoration-line: underline;
+            text-decoration-line: none;
             text-transform: uppercase;
             transition: 0.5s all;
             &:hover {
-                opacity: 0.9;
+                text-decoration: underline;
             }
         }   
     }
