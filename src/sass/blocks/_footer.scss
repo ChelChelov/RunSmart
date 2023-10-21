@@ -1,13 +1,18 @@
 .footer {
     height: 630px;
     position: relative;
+    &__map {
+        iframe {
+            display: block;
+            width: 100%;
+        }
+    }
     &__info {
         position: absolute;
         width: 460px;
         height: 270px;
         background-color: $red-color;
         top: 0;
-        // bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         padding: 50px 54px 56px 54px;

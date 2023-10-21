@@ -12,9 +12,21 @@
             right: 20px;
         }
     }
+    .footer {
+        &__info {
+            top: initial;
+            bottom: 0;
+        }
+    }
 }
 
 @media(max-width: 991px) {
+    .button {
+        &:hover {
+            box-shadow: none;
+            background-color: $red-color;
+        }
+    }
     .promo {
         padding: 21px 15px 93px 15px;
     }
@@ -44,6 +56,16 @@
         &__tab {
             width: 200px;
             font-size: 17px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 420px;
+            height: 230px;
+            padding: 35px;
+        }
+        &__social-item {
+            border: 2px solid #fff;
         }
     }
 }
@@ -253,6 +275,20 @@
             &__descr {
                 font-size: 14px;
             }
+        }
+    }
+    .footer {
+        &__info {
+            width: 100%;
+            height: 200px;
+            padding: 25px;
+        }
+        &__addr {
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+        &__social {
+            margin-top: 30px;
         }
     }
 }
