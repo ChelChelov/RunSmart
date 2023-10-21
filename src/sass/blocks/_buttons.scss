@@ -27,7 +27,9 @@
         height: 58px;
         font-size: 16px;
         &:hover {
-            box-shadow: 0 0 15px 2px $red-color;
+            // box-shadow: 0 0 15px 2px $red-color;
+            box-shadow: none;
+            background-color: #de0202;
         }
     }
     &_mini {
@@ -36,7 +38,9 @@
         font-size: 14px;
         transition: 0.3s all;
         &:hover {
-            box-shadow: 2px 2px 8px $red-color;
+            // box-shadow: 2px 2px 8px $red-color;
+            box-shadow: none;
+            background-color: #de0202;
         }
     }
 }
