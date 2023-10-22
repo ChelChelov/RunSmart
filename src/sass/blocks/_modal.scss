@@ -1,4 +1,5 @@
 .overlay {
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -15,7 +16,7 @@
     background-color: #F2F2F2;
     padding: 35px 40px 40px 40px;
     &__close {
-        position: absolute;
+        position: absolute; /*It can be used because position of modal is*/
         top: 0;
         right: -35px;
         font-size: 32px;
