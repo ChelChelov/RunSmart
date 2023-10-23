@@ -29,10 +29,20 @@
     }
     .promo {
         padding: 21px 15px 93px 15px;
+        &__link {
+            a {
+                text-decoration: underline;
+            }
+        }
     }
     .benefits {
         &__block {
             padding: 0 10px;
+        }
+        &__descr {
+            a {
+                text-decoration: underline;
+            }
         }
     }
     .consultation {
@@ -57,6 +67,14 @@
             width: 200px;
             font-size: 17px;
         }
+        &-item {
+            &__link {
+                text-decoration: underline;
+            }
+            &__back {
+                text-decoration: underline;
+            }
+        }
     }
     .footer {
         &__info {
@@ -66,6 +84,9 @@
         }
         &__social-item {
             border: 2px solid #fff;
+        }
+        &__phone {
+            text-decoration: underline;
         }
     }
 }
