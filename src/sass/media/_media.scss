@@ -291,4 +291,24 @@
             margin-top: 30px;
         }
     }
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        padding: 30px 10px 40px 10px;
+        &__close {
+            top: -22px;
+            right: 3px;
+        }
+        &__subtitle {
+            font-size: 17px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+        .feed-form {
+            width: 278px;
+        }
+    }
 }
