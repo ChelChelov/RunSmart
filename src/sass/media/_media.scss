@@ -181,6 +181,12 @@
     }
 }
 
+@media(min-width: 576px) and (max-width: 620px) {
+    .pageup {
+        right: 10px;
+    }
+}
+
 @media(max-width: 575px) {
     .title {
         font-size: 23px;
@@ -344,5 +350,9 @@
             min-height: 120px;
             width: 270px;
         }
+    }
+    .pageup {
+        bottom: 15px;
+        right: 15px;
     }
 }
