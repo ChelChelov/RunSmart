@@ -14,11 +14,22 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        img {
-            width: 70px;
-            height: 70px;
-            display: block;
-            margin: 0 auto;
+    }
+    &__icon {
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: 0 auto;
+        &_animated {
+            animation: heartbeat 1.5s ease infinite paused;
+            // animation-name: heartbeat;
+            // animation-duration: 1.5s;
+            // animation-timing-function: ease;
+            // animation-iteration-count: infinite;
+            // animation-play-state: paused;
+            &:hover {
+                animation-play-state: running;
+            }
         }
     }
     &__subheader {

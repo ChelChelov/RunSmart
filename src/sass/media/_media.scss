@@ -44,6 +44,11 @@
                 text-decoration: underline;
             }
         }
+        &__icon {
+            &_animated {
+                animation: none;
+            }
+        }
     }
     .consultation {
         padding-left: 25px;
