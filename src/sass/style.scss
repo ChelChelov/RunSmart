@@ -11,9 +11,11 @@
 @import 'blocks/footer';
 @import 'blocks/modal';
 @import 'blocks/buttons';
+@import 'blocks/pageup';
 @import 'media/media';
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
+    scroll-behavior: smooth;
 }
 .container {
     position: relative;

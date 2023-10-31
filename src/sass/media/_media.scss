@@ -327,7 +327,7 @@
         padding: 25px 10px 30px 10px;
         &__close {
             top: -22px;
-            right: 3px;
+            right: 0px;
         }
         &__subtitle {
             font-size: 17px;
@@ -335,5 +335,9 @@
         &__descr {
             font-size: 13px;
         } 
+        &_mini {
+            min-height: 120px;
+            width: 270px;
+        }
     }
 }
