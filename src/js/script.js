@@ -157,4 +157,8 @@ $(document).ready(function() {
             $('.pageup').fadeOut();  
         }
     });
+
+    //WOW
+
+    new WOW().init();
 });
