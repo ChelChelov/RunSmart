@@ -80,11 +80,11 @@
         &__list {
             position: relative;
             width: 50%; //50% of item
-            margin-left: 20px;
-            transform: translateX(0%); // opposite to content
+            // margin-left: 20px;
+            // transform: translateX(0%); // opposite to content
             padding-right: 20px;
             transition: 0.5s all;
-            padding-left: 15px;
+            // padding-left: 15px;
             margin-bottom: 0;
             list-style-type: none;
             &_active {
@@ -108,6 +108,11 @@
                     top: 8px;
                 }
             }
+        }
+        &__detail {
+            padding-left: 15px;
+            margin-bottom: 0;
+            list-style-type: none;
         }
         &__img {
             display: block;
