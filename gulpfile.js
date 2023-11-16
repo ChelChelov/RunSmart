@@ -47,6 +47,7 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
     return gulp.src("src/js/**/*.js")
+        .on("end", browserSync.reload)
         .pipe(gulp.dest("dist/js"));
 });
 
