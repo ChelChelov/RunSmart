@@ -48,6 +48,8 @@ document.querySelector('.next').addEventListener('click', function () {
     slider.goTo('next');
 }); 
 
+//Tabs
+
 $(document).ready(function() {
     
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
